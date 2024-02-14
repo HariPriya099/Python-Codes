@@ -1,0 +1,12 @@
+# Take input of names separated by spaces
+namestring = input("Enter the names separated by spaces: ")
+names = namestring.split()
+
+# Check if there are names in the list
+if names:
+    # Randomly select a person to pay the bill
+    person_who_will_pay_bill = random.choice(names)
+    # Print the name of the person who pays the bill
+    print(person_who_will_pay_bill + " is going to pay the restaurant bill today :)")
+else:
+    print("No names provided. Please enter at least one name.")
